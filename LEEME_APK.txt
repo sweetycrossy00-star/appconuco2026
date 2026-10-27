@@ -1,0 +1,8 @@
+APPCONUCO - Como obtener el APK (uso personal, sin firma de tienda)
+
+1. Instala Node.js 20+ y Android Studio (incluye Java y el Android SDK).
+2. Abre una terminal en esta carpeta.
+3. Linux/Mac: ./CONSTRUIR_APK.sh      Windows: CONSTRUIR_APK.bat
+4. El APK queda en android/app/build/outputs/apk/debug/app-debug.apk
+   (es un APK "debug": viene firmado automaticamente, no necesitas licencia ni cuenta).
+5. Pasalo al celular e instalalo (permite "instalar apps desconocidas").

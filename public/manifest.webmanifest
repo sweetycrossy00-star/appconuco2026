@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Conuco Vivo Arcade Sikuani",
+  "short_name": "ConucoArcade",
+  "description": "Juegos arcade de 8 bits para aprender sikuani, botánica, zoología y conucos del Vichada.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0620",
+  "theme_color": "#ffd23f",
+  "icons": [
+    {
+      "src": "/assets/aistudio/WhatsApp_Image_2026-10-26_at_11.33.22_PM_dc357c09.jpeg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Conuco Vivo Arcade Sikuani",
+  "description": "Aplicación móvil retro gamificada de 8 bits para el aprendizaje de la lengua Sikuani, conucos, botánica, zoología y ciclos de cosecha de Vichada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

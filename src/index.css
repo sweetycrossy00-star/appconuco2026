@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --pixel-font: 'Press Start 2P', monospace;
+    --retro-font: 'VT323', monospace;
+  }
+
+  body {
+    font-family: var(--pixel-font);
+    background-color: #05030a;
+    color: #ffffff;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Retro CRT and Pixel Art Utilities */
+.pixel-corners {
+  clip-path: polygon(
+    0 4px, 4px 4px, 4px 0,
+    calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
+    4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
+  );
+}
+
+.pixel-corners-lg {
+  clip-path: polygon(
+    0 8px, 8px 8px, 8px 0,
+    calc(100% - 8px) 0, calc(100% - 8px) 8px, 100% 8px,
+    100% calc(100% - 8px), calc(100% - 8px) calc(100% - 8px), calc(100% - 8px) 100%,
+    8px 100%, 8px calc(100% - 8px), 0 calc(100% - 8px)
+  );
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.crt-overlay::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));
+  z-index: 10;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+.arcade-btn {
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.4), inset 4px 4px 0px rgba(255, 255, 255, 0.4), 0 4px 0px #000000;
+  transition: transform 0.08s ease;
+}
+
+.arcade-btn:active {
+  transform: translateY(3px);
+  box-shadow: inset 4px 4px 0px rgba(0, 0, 0, 0.4), inset -4px -4px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #000000;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0720;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffd23f;
+  border: 2px solid #0d0720;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d6d;
+}
